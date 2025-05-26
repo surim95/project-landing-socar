@@ -1,0 +1,65 @@
+#wrap {}
+/* main */
+#wrap main {}
+/* 1행 메인 사진 */
+#wrap main #main_wrap {
+    
+}
+#wrap main #main_wrap .img_wrap {
+    background: url(../image/img_car.png) no-repeat center / contain, url(../image/img_eline.png) no-repeat #00b8ff center / cover;
+    height: 100vh;
+    padding: 160px 0 0 320px;
+}
+#wrap main #main_wrap .img_wrap .img_contents {
+    width: max-content;
+    text-align: center;
+}
+#wrap main #main_wrap .img_wrap .img_contents h1 {
+    font-size: 7.5rem; font-weight: 700; line-height: 1.4;
+    color: #fff;
+    margin-bottom: 70px;
+}
+#wrap main #main_wrap .img_wrap .img_contents .app_down {
+    font-size: 1.875rem; font-weight: 500; line-height: 1.4;
+    padding: 16px 32px;
+    background-color: #fff; border-radius: 48px;
+    color: #00b8ff;
+    margin: 0 auto;
+    display: flex; gap: 30px;
+}
+#wrap main #main_wrap .img_wrap .img_contents .app_down img {}
+/* 2행 내용 */
+#wrap main #main_wrap .contents_wrap {
+    text-align: center;
+}
+#wrap main #main_wrap .contents_wrap h1 {
+    font-size: 3.75rem; font-weight: 700; line-height: 1.4; color: #00b8ff;
+    margin:160px 0 30px 0;
+}
+#wrap main #main_wrap .contents_wrap > p {
+    font-size: 1.5rem; font-weight: 300; line-height: 1.4;
+    margin-bottom: 80px;
+}
+#wrap main #main_wrap .contents_wrap .contents_li {
+    border: 1px solid red;
+    width: max-content;
+    display: flex; margin: 0 auto;
+    margin-bottom: 160px;
+}
+#wrap main #main_wrap .contents_wrap .contents_li .contents_style {
+    margin: 0 105px;
+}
+#wrap main #main_wrap .contents_wrap .contents_li .contents_style:nth-child(1)::after {
+    content: ''; display: block;
+    width: 1px; height: 260px;
+    background-color: #00b8ff;
+}
+#wrap main #main_wrap .contents_wrap .contents_li .contents_style h2 {
+    font-size: 1.875rem; font-weight: 500; line-height: 1.4; color: #00b8ff;
+    margin-bottom: 12px;
+}
+#wrap main #main_wrap .contents_wrap .contents_li .contents_style p:nth-child(2) {
+    font-size: 1.125rem; font-weight: 300; line-height: 1.4;
+    margin-bottom: 30px;
+}
+#wrap main #main_wrap .contents_wrap .contents_li .contents_style p:nth-child(3) img {}
