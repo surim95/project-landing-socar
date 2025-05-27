@@ -32,12 +32,12 @@
 #wrap main #main_wrap .contents_wrap {
     text-align: center;
 }
-#wrap main #main_wrap .contents_wrap h1 {
+#wrap main #main_wrap .contents_wrap > h1 {
     font-size: 3.75rem; font-weight: 700; line-height: 1.4; color: #00b8ff;
     margin:160px 0 30px 0;
 }
 #wrap main #main_wrap .contents_wrap > p {
-    font-size: 1.5rem; font-weight: 300; line-height: 1.4;
+    font-size: 1.5rem; line-height: 1.4;
     margin-bottom: 80px;
 }
 #wrap main #main_wrap .contents_wrap .contents_li {
@@ -47,12 +47,14 @@
     margin-bottom: 160px;
 }
 #wrap main #main_wrap .contents_wrap .contents_li .contents_style {
-    margin: 0 105px;
+    padding: 0 105px; width: 100%;
 }
-#wrap main #main_wrap .contents_wrap .contents_li .contents_style:nth-child(1)::after {
+#wrap main #main_wrap .contents_wrap .contents_li .contents_line {position: relative;}
+#wrap main #main_wrap .contents_wrap .contents_li .contents_line::after {
     content: ''; display: block;
     width: 1px; height: 260px;
     background-color: #00b8ff;
+    position: absolute; left: 420px; top: 50%; transform: translateY(-50%);
 }
 #wrap main #main_wrap .contents_wrap .contents_li .contents_style h2 {
     font-size: 1.875rem; font-weight: 500; line-height: 1.4; color: #00b8ff;
@@ -63,3 +65,34 @@
     margin-bottom: 30px;
 }
 #wrap main #main_wrap .contents_wrap .contents_li .contents_style p:nth-child(3) img {}
+/* 3행 퀴즈 */
+#wrap main #main_wrap .quiz_wrap {
+    background-color: #00b8ff;
+    text-align: center;
+}
+#wrap main #main_wrap .quiz_wrap > h1 {
+    font-size: 3.75rem; font-weight: 700; line-height: 1.4; color: #fff;
+    margin:160px 0 30px 0;
+}
+#wrap main #main_wrap .quiz_wrap > p {
+    font-size: 1.5rem; line-height: 1.4;
+    margin-bottom: 80px;
+}
+#wrap main #main_wrap .quiz_wrap #quiz_contents {}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap {
+    width: 1280px; background-color: #fff; border-radius: 30px;
+    margin: 0 auto; display: flex;
+    text-align: left;
+}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap h2 {}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice {
+    display: flex; flex-flow: column nowrap;
+}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label {}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] {}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .quiz_notice {
+    text-align: left;
+}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .quiz_notice dt{}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .quiz_notice dd{}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_btn{}

@@ -18,25 +18,25 @@
             <h1><a href="#"><img src="./image/Logo.png" alt="쏘카"></a></h1>
         </header>
         <main>
-            <section id="main_wrap">
+            <div id="main_wrap">
                 <!-- 1행 메인 사진 -->
-                <div class="img_wrap">
+                <section class="img_wrap">
                     <div class="img_contents">
                         <h1>여름계획!<br>쏘카플랜!</h1>
                         <button type="button" class="app_down"><img src="./image/socar_app_down.png" alt="">쏘카 앱 다운로드</button>
                     </div>
-                </div>
+                </section>
                 <!-- 2행 내용 -->
-                <div class="contents_wrap">
+                <section class="contents_wrap">
                     <h1>쏘카만의 3P!</h1>
                     <p>SOCAR PLAN, SOCAR PASSPORT, SOCAR PAIR로 시원한 여름 바캉스 보내세요.</p>
                     <ul class="contents_li">
-                        <li class="contents_style">
+                        <li class="contents_style contents_line">
                             <h2>SOCAR PLAN</h2>
                             <p>전국에서 만나는<br>쏘카플랜<br>필요한 만큼, 자유롭게</p>
                             <p><img src="./image/icon_con1.png" alt=""></p>
                         </li>
-                        <li class="contents_style">
+                        <li class="contents_style contents_line">
                             <h2>SOCAR PASSPORT</h2>
                             <p>이동부터 숙박,<br>주차까지 할인받는<br>모빌리티 멤버십</p>
                             <p><img src="./image/icon_con2.png" alt=""></p>
@@ -47,14 +47,43 @@
                             <p><img src="./image/icon_con3.png" alt=""></p>
                         </li>
                     </ul>
-                </div>
+                </section>
                 <!-- 3행 퀴즈 -->
+                <section class="quiz_wrap">
+                    <h1>당신의 PLAN을 위한 쏘카의 EVENT!</h1>
+                    <p>여름맞이 PASSPORT 3달 무료 이용권 증정 퀴즈</p>
+                    <form action="#" method="get" id="quiz_contents">
+                        <div class="quiz_contents_wrap">
+                            <div class="left_wrap">
+                                <h2>Q. 다음 중 쏘카의 3P가 아닌 것은?</h2>
+                                <div class="quiz_choice">
+                                    <label><input type="radio" name="quiz" value="place"><span>SOCAR PLACE</span></label>
+                                    <label><input type="radio" name="quiz" value="plan"><span>SOCAR PLAN</span></label>
+                                    <label><input type="radio" name="quiz" value="passport"><span>SOCAR PASSPORT</span></label>
+                                    <label><input type="radio" name="quiz" value="pair"><span>SOCAR PAIR</span></label>
+                                </div>
+                            </div>
+                            <dl class="quiz_notice">
+                                <dt>응모기한</dt>
+                                <dd>2025년 6월 1일 일요일 ~ 2025년 7월 1일 화요일 (30일간) </dd>
+                                <dt>주의사항</dt>
+                                <dd>정답 확인 후 쏘카 앱에 가입되어 있는 정보를 입력하셔야 쿠폰이 지급됩니다.</dd>
+                                <dd>가입된 정보가 없으신 분은 쿠폰을 지급받으실 수 없습니다.</dd>
+                                <dd>동일한 정보로 2회 이상 입력하셔도 쿠폰은 1장만 지급됩니다.</dd>
+                            </dl>
+                        </div>
+                        <button type="submit" class="quiz_btn">정답 확인<img src="./image/icon_btn_arrow.png" alt=""></button>
+                    </form>
+                </section>
                 <!-- 4행 동영상 -->
+                <section class="video_wrap">
+
+                </section>
                 <!-- 5행 서비스 스크롤 -->
                 <!-- 6행 월간 -->
                 <!-- 7행 숙박 -->
                 <!-- 8행 이미지 -->
-            </section>
+            </div>
         </main>
         <footer>
             <section id="footer_bg">
