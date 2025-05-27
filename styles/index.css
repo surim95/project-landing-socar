@@ -69,10 +69,10 @@
 #wrap main #main_wrap .quiz_wrap {
     background-color: #00b8ff;
     text-align: center;
+    padding: 160px;
 }
 #wrap main #main_wrap .quiz_wrap > h1 {
     font-size: 3.75rem; font-weight: 700; line-height: 1.4; color: #fff;
-    margin:160px 0 30px 0;
 }
 #wrap main #main_wrap .quiz_wrap > p {
     font-size: 1.5rem; line-height: 1.4;
@@ -81,18 +81,39 @@
 #wrap main #main_wrap .quiz_wrap #quiz_contents {}
 #wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap {
     width: 1280px; background-color: #fff; border-radius: 30px;
-    margin: 0 auto; display: flex;
+    margin: 0 auto; display: flex; padding: 40px 60px; align-items: center;
     text-align: left;
 }
-#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap h2 {}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap {margin-right: 89px;}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap h2 {
+    font-size: 2.125rem; font-weight: 600; line-height: 1.4;
+    margin-bottom: 40px;
+}
 #wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice {
     display: flex; flex-flow: column nowrap;
+    margin: 0 0 12px 50px;
 }
 #wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label {}
-#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] {}
-#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .quiz_notice {
-    text-align: left;
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] {display: none;}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] +span {
+    font-size: 1.5rem; line-height: 1.4;
+    background: url(../image/icon_quiz_off.png) no-repeat; background-position-y: 7px ;
+    padding-left: 32px;
+    
 }
-#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .quiz_notice dt{}
-#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .quiz_notice dd{}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .quiz_notice {
+    text-align: left; height: max-content;
+}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .quiz_notice dt{
+    font-size: 1.125rem; font-weight: 600; line-height: 1.4;
+    color: #00b8ff; width: max-content;
+    border-bottom: 2px solid #00b8ff;
+    margin-bottom: 8px;
+}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .quiz_notice dd:nth-child(2){
+    margin-bottom: 30px;
+}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .quiz_notice dd{
+    font-size: 1.125rem; line-height: 1.4;
+}
 #wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_btn{}
