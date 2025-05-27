@@ -2,9 +2,7 @@
 /* main */
 #wrap main {}
 /* 1행 메인 사진 */
-#wrap main #main_wrap {
-    
-}
+#wrap main #main_wrap {}
 #wrap main #main_wrap .img_wrap {
     background: url(../image/img_car.png) no-repeat center / contain, url(../image/img_eline.png) no-repeat #00b8ff center / cover;
     height: 100vh;
@@ -20,15 +18,18 @@
     margin-bottom: 70px;
 }
 #wrap main #main_wrap .img_wrap .img_contents .app_down {
+    width: max-content;
     font-size: 1.875rem; font-weight: 500; line-height: 1.4;
     padding: 16px 32px;
     background-color: #fff; border-radius: 48px;
     color: #00b8ff;
     margin: 0 auto;
-    display: flex; gap: 30px;
+    display: flex;
 }
-#wrap main #main_wrap .img_wrap .img_contents .app_down img {}
-/* 2행 내용 */
+#wrap main #main_wrap .img_wrap .img_contents .app_down img {
+    margin-right: 30px;
+}
+/* 2행 내용 ================================================================== */
 #wrap main #main_wrap .contents_wrap {
     text-align: center;
 }
@@ -41,7 +42,6 @@
     margin-bottom: 80px;
 }
 #wrap main #main_wrap .contents_wrap .contents_li {
-    border: 1px solid red;
     width: max-content;
     display: flex; margin: 0 auto;
     margin-bottom: 160px;
@@ -65,7 +65,7 @@
     margin-bottom: 30px;
 }
 #wrap main #main_wrap .contents_wrap .contents_li .contents_style p:nth-child(3) img {}
-/* 3행 퀴즈 */
+/* 3행 퀴즈 ================================================================== */
 #wrap main #main_wrap .quiz_wrap {
     background-color: #00b8ff;
     text-align: center;
@@ -73,6 +73,7 @@
 }
 #wrap main #main_wrap .quiz_wrap > h1 {
     font-size: 3.75rem; font-weight: 700; line-height: 1.4; color: #fff;
+    margin-bottom: 30px;
 }
 #wrap main #main_wrap .quiz_wrap > p {
     font-size: 1.5rem; line-height: 1.4;
@@ -81,7 +82,7 @@
 #wrap main #main_wrap .quiz_wrap #quiz_contents {}
 #wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap {
     width: 1280px; background-color: #fff; border-radius: 30px;
-    margin: 0 auto; display: flex; padding: 40px 60px; align-items: center;
+    margin: 0 auto 80px; display: flex; padding: 40px 60px; align-items: center;
     text-align: left;
 }
 #wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap {margin-right: 89px;}
@@ -116,4 +117,16 @@
 #wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .quiz_notice dd{
     font-size: 1.125rem; line-height: 1.4;
 }
-#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_btn{}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_btn{
+    display: flex;
+    align-items: center;
+    padding: 12px 20px 12px 40px;
+    background-color: #fff;
+    font-size: 1.75rem; font-weight: 500; line-height: 1.4; color: #00b8ff;
+    border-radius: 50px;
+    position: relative; left: 50%; transform: translateX(-50%);
+}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_btn img{
+    margin-left: 4px;
+}
+/* 3행 동영상 ================================================================== */
