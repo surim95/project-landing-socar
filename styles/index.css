@@ -1,9 +1,6 @@
 #wrap {}
 /* main */
 #wrap main {}
-section {
-    border: 1px solid red;
-}
 /* 1행 메인 사진 */
 #wrap main #main_wrap {}
 #wrap main #main_wrap .img_wrap {
@@ -209,8 +206,9 @@ section {
 #wrap main #main_wrap .month_e_wrap .month_e_title > h1 em::after{
     content: '';
     background-color: #00b8ff; width: 304px; height: 64px;
-    position: absolute; left: 0; top: 55%; transform: translateY(-50%);
+    position: absolute; left: 0; top: 55%; transform: translateY(-50%) scaleX(0);
     z-index: -1; /* z-index: -값 주기 */
+    transform-origin: left;
 }
 #wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents {
     display: flex; justify-content: space-between;
@@ -220,7 +218,7 @@ section {
     width: 300px;
     text-align: center;
     border: 1px solid #D9D9D9; border-radius: 30px;
-    background-color: #fff;
+    background-color: #fff; transform: scale(1);
 }
 #wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > h2 {
     margin-top: 50px;
@@ -261,6 +259,21 @@ section {
     border-color: #00b8ff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
+#wrap main #main_wrap .month_e_wrap:hover .month_e_title > h1 em::after{
+    animation: highlighting 0.2s linear forwards;
+}
+#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e:hover {
+    animation: boxscale 0.2s linear forwards;
+}
+/* 6행 애니메이션 */
+@keyframes highlighting {
+    from {transform:translateY(-50%) scaleX(0);}
+    to {transform:translateY(-50%) scaleX(1);}
+}
+@keyframes boxscale {
+    from {transform: scale(1);}
+    to {transform: scale(1.05);}
+}
 /* 7행 숙박 ========================================== */
 #wrap main #main_wrap .dormitory_wrap {
     padding: 160px;
@@ -278,16 +291,18 @@ section {
     writing-mode: vertical-rl; text-orientation: upright; /* 텍스트 세로 쓰기하는 방법 */
     position: relative; z-index: 2; top: 26px;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1::after {
-    content: ''; display: block; width: 74px; height: 292px;
-    background-color: #00b8ff; position: absolute; left: 2px; top: -26px; z-index: -2;
-}
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(1) {}
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(2) {
     top: 271px;
 }
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(3) {
     top: 609px;
+}
+/* 7행 형광펜 효과 ===================================================== */
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1::after {
+    content: ''; display: block; width: 74px; height: 292px;
+    background-color: #00b8ff; position: absolute; left: 2px; top: -26px; z-index: -2;
+    transform: scaleY(0); transform-origin: top;
 }
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(2):after {
     height: 372px;
@@ -304,6 +319,7 @@ section {
     text-align: center;
     padding: 80px 30px;
     background-color: #fff; position: relative;
+    transform: translate(0, 0);
 }
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li h2 {
     font-size: 2.5rem; font-weight: 600; line-height: 1.5;
@@ -322,7 +338,7 @@ section {
 }
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li .dormitory_icon  {}
 /* 새로운 숙박 카드 뉴스 효과 ============================================== */
-/*  dot 효과 */
+/* dot 효과 */
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1)::before {
     content: ''; display: block;
     width: 14px; height: 14px; border-radius: 50%;
@@ -344,6 +360,31 @@ section {
     content: ''; display: block;
     width: 25%; height: 18px; background-color: #00b8ff; opacity: 25%;
     position: absolute; z-index: -3; left: 50%; top: 81%; transform: translateX(-50%);
+}
+/* 7행 hightlight 애니메이션 효과 */
+#wrap main #main_wrap .dormitory_wrap:hover .dormitory_contents_wrap .dormitory_title > h1:nth-child(1)::after {
+    animation: highlighting2 0.2s linear forwards;
+}
+#wrap main #main_wrap .dormitory_wrap:hover .dormitory_contents_wrap .dormitory_title > h1:nth-child(2)::after {
+    animation: highlighting2 0.2s 0.5s linear forwards;
+}
+#wrap main #main_wrap .dormitory_wrap:hover .dormitory_contents_wrap .dormitory_title > h1:nth-child(3)::after {
+    animation: highlighting2 0.2s 0.9s linear forwards;
+}
+
+@keyframes highlighting2 {
+    from {transform:scaleY(0);}
+    to {transform:scaleY(1);}
+}
+/* 7행 hover 효과 */
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:hover {
+    border-color: #00b8ff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    animation: boxeffect 0.5s infinite alternate both;
+}
+@keyframes boxeffect {
+    from {transform: translate(5px, 5px);}
+    to {transform: translate(-5px, -5px);}
 }
 /* 8행 이미지 ========================================== */
 #wrap main #main_wrap .car_bg_wrap {}
