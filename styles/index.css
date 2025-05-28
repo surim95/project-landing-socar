@@ -1,6 +1,9 @@
 #wrap {}
 /* main */
 #wrap main {}
+section {
+    border: 1px solid red;
+}
 /* 1행 메인 사진 */
 #wrap main #main_wrap {}
 #wrap main #main_wrap .img_wrap {
@@ -89,7 +92,7 @@
 #wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents {}
 #wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap {
     width: 1280px; background-color: #fff; border-radius: 30px;
-    margin: 0 auto 80px; display: flex; padding: 40px 60px; align-items: center;
+    margin: 0 auto 80px; display: flex; padding: 40px 60px; align-items:end;
     text-align: left;
 }
 #wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap {margin-right: 89px;}
@@ -107,9 +110,13 @@
 #wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] {display: none;}
 #wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] +span {
     font-size: 1.5rem; 
-    background: url(../image/icon_quiz_off.png) no-repeat; background-position-y: 7px ;
+    background-image: url(../image/icon_quiz_off.png);
+    background-repeat: no-repeat; background-position-y: 7px ;
     padding-left: 32px;
     
+}#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz]:checked +span {
+    background-image: url(../image/icon_quiz_on.png);
+    color: #00b8ff;
 }
 #wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .quiz_notice {
     text-align: left; height: max-content;
@@ -130,11 +137,12 @@
 .btn_style{
     display: flex;
     align-items: center;
-    padding: 12px 20px 12px 40px;
+    line-height: 63px;
     background-color: #fff;
     font-size: 1.75rem; font-weight: 500;  color: #00b8ff;
     border-radius: 50px;
     position: relative; left: 50%; transform: translateX(-50%);
+    width: max-content; padding: 0 20px 0 40px;
 }
 .btn_style img{
     margin-left: 4px;
@@ -150,21 +158,33 @@
 #wrap main #main_wrap .video_wrap .event_line p:nth-child(1){
     height: 80px;
     background: url(../image/socar_line01.png) repeat-x center;
+    animation: lineslide infinite 20s linear ;
 }
 #wrap main #main_wrap .video_wrap .event_line p:nth-child(2){
     height: 80px;
-    background: url(../image/socar_line02.png) repeat-x left;
+    background: url(../image/socar_line02.png) repeat-x center;
+    animation: lineslide2 infinite 20s linear ;
 }
 #wrap main #main_wrap .video_wrap .video_contents {
     width: 1280px;
     margin: 0 auto;
 }
 #wrap main #main_wrap .video_wrap .video_contents iframe{
+    width: 100%;
     margin-bottom: 60px;
 }
 #wrap main #main_wrap .video_wrap .video_contents .youtube_btn {
     border: 1px solid #00b8ff;
     width: max-content;
+}
+/* 4행 애니메이션 */
+@keyframes lineslide {
+    from {background-position-x: 0;}
+    to {background-position-x: 1256px;}
+}
+@keyframes lineslide2 {
+    from {background-position-x: 1256px;}
+    to {background-position-x: 0;}
 }
 /* 5행 서비스 스크롤 ===================================================================== */
 
@@ -193,14 +213,17 @@
     z-index: -1; /* z-index: -값 주기 */
 }
 #wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents {
-    display: flex; gap: 60px;
+    display: flex; justify-content: space-between;
     margin-bottom: 80px;
 }
 #wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e {
-    text-align: center; padding: 50px 32px;
-    border: 1px solid #00b8ff; border-radius: 30px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #D9D9D9; border-radius: 30px;
+    background-color: #fff;
 }
 #wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > h2 {
+    margin-top: 50px;
     margin-bottom: 28px; font-size:1.375rem; font-weight: 600;
 }
 #wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > h2 em{
@@ -214,7 +237,7 @@
     margin-bottom: 28px;
 }
 #wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 50px;
 }
 #wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > p em {
     font-size: 1.5rem; font-weight: 800;
@@ -233,6 +256,11 @@
 #wrap main #main_wrap .month_e_wrap .month_e_title .month_e_btn img {
     filter: brightness(0) invert(1); /* 단색 이미지를 필터를 이용해 흰색으로 만드는 방법 */
 }
+/* 6행 hover 효과 ========================================================= */
+#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e:hover {
+    border-color: #00b8ff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
 /* 7행 숙박 ========================================== */
 #wrap main #main_wrap .dormitory_wrap {
     padding: 160px;
@@ -246,31 +274,77 @@
     display: flex;
 }
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1{
-    font-size: 5rem; font-weight: 700; line-height: 1.2;
+    font-size: 5rem; font-weight: 700; line-height:1; color: #fff;
     writing-mode: vertical-rl; text-orientation: upright; /* 텍스트 세로 쓰기하는 방법 */
+    position: relative; z-index: 2; top: 26px;
+}
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1::after {
+    content: ''; display: block; width: 74px; height: 292px;
+    background-color: #00b8ff; position: absolute; left: 2px; top: -26px; z-index: -2;
 }
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(1) {}
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(2) {}
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(3) {}
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(2) {
+    top: 271px;
+}
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(3) {
+    top: 609px;
+}
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(2):after {
+    height: 372px;
+}
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(3):after {
+    height: 212px;
+}
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box {
-    display: flex; gap: 40px; flex-flow: row wrap;
-
+    display: grid; grid-template-columns: 420px 420px; gap:40px;
+    margin-left: 150px;
 }
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li {
-    width: 420px; height: 540px;
     border: 1px solid #D9D9D9; border-radius: 40px;
     text-align: center;
     padding: 80px 30px;
+    background-color: #fff; position: relative;
 }
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li h2 {
     font-size: 2.5rem; font-weight: 600; line-height: 1.5;
     margin-bottom: 35px;
+    position: relative; z-index: 3;
+}
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li h2 em {
+    font-weight: 600; display: block;
+}
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li h2 span {
+    font-weight: 600; display: block;
 }
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li p:nth-of-type(1)  {
     font-size: 1.25rem;
     margin-bottom: 35px;
 }
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li .dormitory_icon  {}
+/* 새로운 숙박 카드 뉴스 효과 ============================================== */
+/*  dot 효과 */
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1)::before {
+    content: ''; display: block;
+    width: 14px; height: 14px; border-radius: 50%;
+    background-color: #00b8ff;
+    position: absolute; left: 30px; top: 30px;
+}
+/* hightlight 효과 */
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1) h2::after {
+    content: ''; display: block;
+    width: 85%; height: 18px; background-color: #00b8ff; opacity: 25%;
+    position: absolute; z-index: -3; left: 50%; top: 14%; transform: translateX(-50%);
+}
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1) h2 em::after {
+    content: ''; display: block;
+    width: 95%; height: 18px; background-color: #00b8ff; opacity: 25%;
+    position: absolute; z-index: -3; left: 50%; top: 48%; transform: translateX(-50%);
+}
+#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1) h2 span::after {
+    content: ''; display: block;
+    width: 25%; height: 18px; background-color: #00b8ff; opacity: 25%;
+    position: absolute; z-index: -3; left: 50%; top: 81%; transform: translateX(-50%);
+}
 /* 8행 이미지 ========================================== */
 #wrap main #main_wrap .car_bg_wrap {}
 #wrap main #main_wrap .car_bg_wrap .car_bg::before{
