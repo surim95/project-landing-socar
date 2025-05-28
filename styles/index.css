@@ -380,7 +380,7 @@
 #wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:hover {
     border-color: #00b8ff;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
-    animation: boxeffect 0.5s infinite alternate both;
+    animation: boxeffect 0.5s infinite alternate forwards;
 }
 @keyframes boxeffect {
     from {transform: translate(5px, 5px);
