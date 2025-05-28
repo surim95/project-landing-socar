@@ -82,7 +82,7 @@
 }
 #wrap main #main_wrap .quiz_wrap #quiz_contents {}
 #wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap {
-    width: 1280px; background-color: #fff; border-radius: 30px;
+    width: max-content; background-color: #fff; border-radius: 30px;
     margin: 0 auto 80px; display: flex; padding: 40px 60px; align-items: center;
     text-align: left;
 }
@@ -93,9 +93,11 @@
 }
 #wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice {
     display: flex; flex-flow: column nowrap;
-    margin: 0 0 12px 50px;
+    margin: 0 0 0 50px;
 }
-#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label {}
+#wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label {
+    margin-bottom: 12px;
+}
 #wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] {display: none;}
 #wrap main #main_wrap .quiz_wrap #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] +span {
     font-size: 1.5rem; line-height: 1.4;
@@ -157,24 +159,19 @@
     width: max-content;
 }
 /* 5행 서비스 스크롤 ===================================================================== */
-#wrap main #main_wrap .slide_wrap {
-    text-align: left;
+
+/* 6행 월간 ========================================== */
+
+/* 7행 숙박 ========================================== */
+
+/* 8행 이미지 ========================================== */
+#wrap main #main_wrap .car_bg_wrap {}
+#wrap main #main_wrap .car_bg_wrap .car_bg::before{
+    content: ''; display: block;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.4);
 }
-#wrap main #main_wrap .slide_wrap .slide_title {background-color: #00b8ff;}
-#wrap main #main_wrap .slide_wrap .slide_title .slide_title_contents {
-    padding: 120px 320px 212px; display: flex; justify-content:space-between;
+#wrap main #main_wrap .car_bg_wrap .car_bg{
+    height: 80vh;
+    background: url(../image/img_car_driving.jpg) no-repeat fixed center 60% / cover;
 }
-#wrap main #main_wrap .slide_wrap .slide_title .slide_title_contents h1 {
-    font-size:3.75rem; font-weight: 700; color: #fff; line-height: 1.4;
-}
-#wrap main #main_wrap .slide_wrap .slide_title .slide_title_contents .btn_wrap {
-    width: 100px;
-}
-#wrap main #main_wrap .slide_wrap .slide_title .slide_title_contents .btn_wrap .slide_btn {}
-#wrap main #main_wrap .slide_wrap .slide_title .slide_title_contents .btn_wrap .slide_btn img {}
-#wrap main #main_wrap .slide_wrap .slide_li {}
-#wrap main #main_wrap .slide_wrap .slide_li .slide_contents {}
-#wrap main #main_wrap .slide_wrap .slide_li .slide_contents h2 {}
-#wrap main #main_wrap .slide_wrap .slide_li .slide_contents h2 p {}
-#wrap main #main_wrap .slide_wrap .slide_bg {}
-#wrap main #main_wrap .slide_wrap .slide_bg li {}

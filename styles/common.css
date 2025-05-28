@@ -9,11 +9,14 @@
 }
 #wrap header h1 a img {}
 /* footer */
-#wrap footer {}
-#wrap footer #footer_bg {
+#wrap footer {
     width: 100%;
     background-color: #28323C;
-    padding: 100px 320px;
+    padding: 100px 0;
+}
+#wrap footer #footer_bg {
+    width: max-content;
+    margin: 0 auto;
 }
 #wrap footer #footer_bg .footer_wrap {}
 #wrap footer #footer_bg .footer_wrap > *{
