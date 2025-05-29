@@ -108,7 +108,7 @@
 #wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] +span {
     font-size: 1.5rem; 
     background-image: url(../image/icon_quiz_off.png);
-    background-repeat: no-repeat; background-position-y: 7px ;
+    background-repeat: no-repeat; background-position-y: 9px ;
     padding-left: 32px;
     
 }#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz]:checked +span {
