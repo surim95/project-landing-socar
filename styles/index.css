@@ -3,21 +3,21 @@
 #wrap main {}
 /* 1행 메인 사진 */
 #wrap main #main_wrap {}
-#wrap main #main_wrap .img_wrap {
+.img_wrap {
     background: url(../image/img_car.png) no-repeat center / contain, url(../image/img_eline.png) no-repeat #00b8ff center / cover;
     height: 100vh;
     padding: 160px 0 0 320px;
 }
-#wrap main #main_wrap .img_wrap .img_contents {
+.img_wrap .img_contents {
     width: max-content;
     text-align: center;
 }
-#wrap main #main_wrap .img_wrap .img_contents h1 {
+#main_wrap .img_wrap .img_contents h1 {
     font-size: 7.5rem; font-weight: 700; 
     color: #fff;
     margin-bottom: 70px;
 }
-#wrap main #main_wrap .img_wrap .img_contents .app_down {
+#main_wrap .img_wrap .img_contents .app_down {
     width: max-content;
     font-size: 1.875rem; font-weight: 500; 
     padding: 16px 32px;
@@ -25,112 +25,113 @@
     color: #00b8ff;
     margin: 0 auto;
     display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
-#wrap main #main_wrap .img_wrap .img_contents .app_down img {
+#main_wrap .img_wrap .img_contents .app_down img {
     margin-right: 30px;
 }
 /* 2행 내용 ================================================================== */
-#wrap main #main_wrap .contents_wrap {}
-#wrap main #main_wrap .contents_wrap .contents_container {
+#main_wrap .contents_wrap {}
+#main_wrap .contents_wrap .contents_container {
     width: 1280px;
     margin: 0 auto;
     text-align: center;
 }
-#wrap main #main_wrap .contents_wrap .contents_container > h1 {
+#main_wrap .contents_wrap .contents_container > h1 {
     font-size: 3.75rem; font-weight: 700;  color: #00b8ff;
     margin:160px 0 30px 0;
 }
-#wrap main #main_wrap .contents_wrap .contents_container > p {
+#main_wrap .contents_wrap .contents_container > p {
     font-size: 1.5rem; 
     margin-bottom: 80px;
 }
-#wrap main #main_wrap .contents_wrap .contents_container .contents_li {
+#main_wrap .contents_wrap .contents_container .contents_li {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 160px;
 }
-#wrap main #main_wrap .contents_wrap .contents_container .contents_li .contents_style {
+#main_wrap .contents_wrap .contents_container .contents_li .contents_style {
     width: 100%;
 }
-#wrap main #main_wrap .contents_wrap .contents_container .contents_li .contents_line {position: relative;}
-#wrap main #main_wrap .contents_wrap .contents_container .contents_li .contents_line::after {
+#main_wrap .contents_wrap .contents_container .contents_li .contents_line {position: relative;}
+#main_wrap .contents_wrap .contents_container .contents_li .contents_line::after {
     content: ''; display: block;
     width: 1px; height: 260px;
     background-color: #00b8ff;
     position: absolute; left: 420px; top: 50%; transform: translateY(-50%);
 }
-#wrap main #main_wrap .contents_wrap .contents_container .contents_li .contents_style h2 {
+#main_wrap .contents_wrap .contents_container .contents_li .contents_style h2 {
     font-size: 1.875rem; font-weight: 500;  color: #00b8ff;
     margin-bottom: 12px;
 }
-#wrap main #main_wrap .contents_wrap .contents_container .contents_li .contents_style p:nth-child(2) {
+#main_wrap .contents_wrap .contents_container .contents_li .contents_style p:nth-child(2) {
     font-size: 1.125rem; font-weight: 300; 
     margin-bottom: 30px;
 }
-#wrap main #main_wrap .contents_wrap .contents_container .contents_li .contents_style p:nth-child(3) img {}
+#main_wrap .contents_wrap .contents_container .contents_li .contents_style p:nth-child(3) img {}
 /* 3행 퀴즈 ================================================================== */
-#wrap main #main_wrap .quiz_wrap {
+#main_wrap .quiz_wrap {
     background-color: #00b8ff;
     text-align: center;
     padding: 160px 0;
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container {
+#main_wrap .quiz_wrap .quiz_container {
     width:1280px;
     margin: 0 auto;
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container > h1 {
+#main_wrap .quiz_wrap .quiz_container > h1 {
     font-size: 3.75rem; font-weight: 700;  color: #fff;
     margin-bottom: 30px;
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container > p {
+#main_wrap .quiz_wrap .quiz_container > p {
     font-size: 1.5rem; 
     margin-bottom: 80px;
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents {}
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap {
+#main_wrap .quiz_wrap .quiz_container #quiz_contents {}
+#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap {
     width: 1280px; background-color: #fff; border-radius: 30px;
     margin: 0 auto 80px; display: flex; padding: 40px 60px; align-items:end;
     text-align: left;
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap {margin-right: 89px;}
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap h2 {
+#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap {margin-right: 89px;}
+#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap h2 {
     font-size: 2.125rem; font-weight: 600; 
     margin-bottom: 40px;
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice {
+#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice {
     display: flex; flex-flow: column nowrap;
     margin: 0 0 0 50px;
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label {
+#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label {
     margin-bottom: 12px;
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] {display: none;}
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] +span {
+#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] {display: none;}
+#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz] +span {
     font-size: 1.5rem; 
     background-image: url(../image/icon_quiz_off.png);
     background-repeat: no-repeat; background-position-y: 9px ;
     padding-left: 32px;
     
-}#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz]:checked +span {
+}#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .left_wrap .quiz_choice label input[name=quiz]:checked +span {
     background-image: url(../image/icon_quiz_on.png);
     color: #00b8ff;
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .quiz_notice {
+#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .quiz_notice {
     text-align: left; height: max-content;
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .quiz_notice dt{
+#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .quiz_notice dt{
     font-size: 1.125rem; font-weight: 600; 
     color: #00b8ff; width: max-content;
     border-bottom: 2px solid #00b8ff;
     margin-bottom: 8px;
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .quiz_notice dd:nth-child(2){
+#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .quiz_notice dd:nth-child(2){
     margin-bottom: 30px;
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .quiz_notice dd{
+#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_contents_wrap .quiz_notice dd{
     font-size: 1.125rem; 
 }
-#wrap main #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_btn{}
+#main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_btn{}
 .btn_style{
     display: flex;
     align-items: center;
@@ -145,32 +146,32 @@
     margin-left: 4px;
 }
 /* 4행 동영상 ================================================================== */
-#wrap main #main_wrap .video_wrap {
+#main_wrap .video_wrap {
     text-align: center;
     padding-bottom: 160px;
 }
-#wrap main #main_wrap .video_wrap .event_line {
+#main_wrap .video_wrap .event_line {
     padding: 100px 0 160px 0;
 }
-#wrap main #main_wrap .video_wrap .event_line p:nth-child(1){
+#main_wrap .video_wrap .event_line p:nth-child(1){
     height: 80px;
     background: url(../image/socar_line01.png) repeat-x center;
     animation: lineslide infinite 20s linear ;
 }
-#wrap main #main_wrap .video_wrap .event_line p:nth-child(2){
+#main_wrap .video_wrap .event_line p:nth-child(2){
     height: 80px;
     background: url(../image/socar_line02.png) repeat-x center;
     animation: lineslide2 infinite 20s linear ;
 }
-#wrap main #main_wrap .video_wrap .video_contents {
+#main_wrap .video_wrap .video_contents {
     width: 1280px;
     margin: 0 auto;
 }
-#wrap main #main_wrap .video_wrap .video_contents iframe{
+#main_wrap .video_wrap .video_contents iframe{
     width: 100%;
     margin-bottom: 60px;
 }
-#wrap main #main_wrap .video_wrap .video_contents .youtube_btn {
+#main_wrap .video_wrap .video_contents .youtube_btn {
     border: 1px solid #00b8ff;
     width: max-content;
 }
@@ -186,83 +187,83 @@
 /* 5행 서비스 스크롤 ===================================================================== */
 
 /* 6행 월간 ========================================== */
-#wrap main #main_wrap .month_e_wrap{
+#main_wrap .month_e_wrap{
     padding: 140px 0 160px;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title {
+#main_wrap .month_e_wrap .month_e_title {
     width: 1380px;
     margin: 0 auto;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title > h1 {
+#main_wrap .month_e_wrap .month_e_title > h1 {
     font-size: 3.75rem; font-weight: 700; color: #00b8ff;
     position: relative; left: 50px;
     margin-bottom: 80px;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title > h1 em{
+#main_wrap .month_e_wrap .month_e_title > h1 em{
     font-weight: 700; color: #fff;
     position: relative;
     z-index: 1;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title > h1 em::after{
+#main_wrap .month_e_wrap .month_e_title > h1 em::after{
     content: '';
     background-color: #00b8ff; width: 304px; height: 64px;
     position: absolute; left: 0; top: 55%; transform: translateY(-50%) scaleX(0);
     z-index: -1; /* z-index: -값 주기 */
     transform-origin: left;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents {
+#main_wrap .month_e_wrap .month_e_title .month_e_contents {
     display: flex; justify-content: space-between;
     margin-bottom: 80px;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e {
+#main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e {
     width: 300px;
     text-align: center;
     border: 1px solid #D9D9D9; border-radius: 30px;
     background-color: #fff; transform: scale(1);
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > h2 {
+#main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > h2 {
     margin-top: 50px;
     margin-bottom: 28px; font-size:1.375rem; font-weight: 600;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > h2 em{
+#main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > h2 em{
     font-weight: 600; color: #FF1500;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > h3 {
+#main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > h3 {
     font-size: 1.25rem;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > p {
+#main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > p {
     font-size: 3.75rem; font-weight: 800;
     margin-bottom: 28px;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > p:last-child {
+#main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > p:last-child {
     margin-bottom: 50px;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > p em {
+#main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > p em {
     font-size: 1.5rem; font-weight: 800;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > p.month_e_confirm {
+#main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > p.month_e_confirm {
     color: #00b8ff;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > p.month_e_confirm em {
+#main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e > p.month_e_confirm em {
     color: #00b8ff;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_btn {
+#main_wrap .month_e_wrap .month_e_title .month_e_btn {
     width: max-content;
     background-color: #00b8ff;
     color: #fff;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_btn img {
+#main_wrap .month_e_wrap .month_e_title .month_e_btn img {
     filter: brightness(0) invert(1); /* 단색 이미지를 필터를 이용해 흰색으로 만드는 방법 */
 }
 /* 6행 hover 효과 ========================================================= */
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e:hover {
+#main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e:hover {
     border-color: #00b8ff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-#wrap main #main_wrap .month_e_wrap:hover .month_e_title > h1 em::after{
+#main_wrap .month_e_wrap:hover .month_e_title > h1 em::after{
     animation: highlighting 0.2s linear forwards;
 }
-#wrap main #main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e:hover {
+#main_wrap .month_e_wrap .month_e_title .month_e_contents .month_e:hover {
     animation: boxscale 0.2s linear forwards;
 }
 /* 6행 애니메이션 */
@@ -275,100 +276,100 @@
     to {transform: scale(1.05);}
 }
 /* 7행 숙박 ========================================== */
-#wrap main #main_wrap .dormitory_wrap {
+#main_wrap .dormitory_wrap {
     padding: 160px;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap {
     width: 1280px;
     margin: 0 auto;
     display: flex;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title{
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title{
     display: flex;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1{
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1{
     font-size: 5rem; font-weight: 700; line-height:1; color: #fff;
     writing-mode: vertical-rl; text-orientation: upright; /* 텍스트 세로 쓰기하는 방법 */
     position: relative; z-index: 2; top: 26px;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(1) {}
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(2) {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(1) {}
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(2) {
     top: 271px;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(3) {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(3) {
     top: 609px;
 }
 /* 7행 형광펜 효과 ===================================================== */
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1::after {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1::after {
     content: ''; display: block; width: 74px; height: 292px;
     background-color: #00b8ff; position: absolute; left: 2px; top: -26px; z-index: -2;
     transform: scaleY(0); transform-origin: top;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(2):after {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(2):after {
     height: 372px;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(3):after {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_title > h1:nth-child(3):after {
     height: 212px;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box {
     display: grid; grid-template-columns: 420px 420px; gap:40px;
     margin-left: 150px;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li {
     border: 1px solid #D9D9D9; border-radius: 40px;
     text-align: center;
     padding: 80px 30px;
     background-color: #fff; position: relative;
     transform: translate(0, 0);
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li h2 {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li h2 {
     font-size: 2.5rem; font-weight: 600; line-height: 1.5;
     margin-bottom: 35px;
     position: relative; z-index: 3;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li h2 em {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li h2 em {
     font-weight: 600; display: block;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li h2 span {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li h2 span {
     font-weight: 600; display: block;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li p:nth-of-type(1)  {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li p:nth-of-type(1)  {
     font-size: 1.25rem;
     margin-bottom: 35px;
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li .dormitory_icon  {}
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li .dormitory_icon  {}
 /* 새로운 숙박 카드 뉴스 효과 ============================================== */
 /* dot 효과 */
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1)::before {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1)::before {
     content: ''; display: block;
     width: 14px; height: 14px; border-radius: 50%;
     background-color: #00b8ff;
     position: absolute; left: 30px; top: 30px;
 }
 /* hightlight 효과 */
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1) h2::after {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1) h2::after {
     content: ''; display: block;
     width: 85%; height: 18px; background-color: #00b8ff; opacity: 25%;
     position: absolute; z-index: -3; left: 50%; top: 14%; transform: translateX(-50%);
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1) h2 em::after {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1) h2 em::after {
     content: ''; display: block;
     width: 95%; height: 18px; background-color: #00b8ff; opacity: 25%;
     position: absolute; z-index: -3; left: 50%; top: 48%; transform: translateX(-50%);
 }
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1) h2 span::after {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:nth-child(1) h2 span::after {
     content: ''; display: block;
     width: 25%; height: 18px; background-color: #00b8ff; opacity: 25%;
     position: absolute; z-index: -3; left: 50%; top: 81%; transform: translateX(-50%);
 }
 /* 7행 hightlight 애니메이션 효과 */
-#wrap main #main_wrap .dormitory_wrap:hover .dormitory_contents_wrap .dormitory_title > h1:nth-child(1)::after {
+#main_wrap .dormitory_wrap:hover .dormitory_contents_wrap .dormitory_title > h1:nth-child(1)::after {
     animation: highlighting2 0.2s linear forwards;
 }
-#wrap main #main_wrap .dormitory_wrap:hover .dormitory_contents_wrap .dormitory_title > h1:nth-child(2)::after {
+#main_wrap .dormitory_wrap:hover .dormitory_contents_wrap .dormitory_title > h1:nth-child(2)::after {
     animation: highlighting2 0.2s 0.5s linear forwards;
 }
-#wrap main #main_wrap .dormitory_wrap:hover .dormitory_contents_wrap .dormitory_title > h1:nth-child(3)::after {
+#main_wrap .dormitory_wrap:hover .dormitory_contents_wrap .dormitory_title > h1:nth-child(3)::after {
     animation: highlighting2 0.2s 0.9s linear forwards;
 }
 
@@ -377,7 +378,7 @@
     to {transform:scaleY(1);}
 }
 /* 7행 hover 효과 */
-#wrap main #main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:hover {
+#main_wrap .dormitory_wrap .dormitory_contents_wrap .dormitory_contents_box li:hover {
     border-color: #00b8ff;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
     animation: boxeffect 0.5s infinite alternate forwards;
@@ -391,13 +392,13 @@
     }
 }
 /* 8행 이미지 ========================================== */
-#wrap main #main_wrap .car_bg_wrap {}
-#wrap main #main_wrap .car_bg_wrap .car_bg::before{
+#main_wrap .car_bg_wrap {}
+#main_wrap .car_bg_wrap .car_bg::before{
     content: ''; display: block;
     height: 80vh;
     background: rgba(0, 0, 0, 0.4);
 }
-#wrap main #main_wrap .car_bg_wrap .car_bg{
+#main_wrap .car_bg_wrap .car_bg{
     height: 80vh;
     background: url(../image/img_car_driving.jpg) no-repeat fixed center 60% / cover;
 }
