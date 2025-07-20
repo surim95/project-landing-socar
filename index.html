@@ -1,242 +1,367 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
     <title>여름계획! 쏘카플랜! | 쏘카 SOCAR</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/common.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
     <script src="./scripts/index.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="wrap">
-        <header>
-            <h1><a href="#"><img src="./image/Logo.png" alt="쏘카"></a></h1>
-        </header>
-        <main>
-            <div id="main_wrap">
-                <!-- 1행 메인 사진 -->
-                <section class="img_wrap">
-                    <div class="img_contents">
-                        <h1>여름계획!<br>쏘카플랜!</h1>
-                        <a href="#" class="app_down"><img src="./image/socar_app_down.png" alt="">쏘카 앱 다운로드</a>
-                    </div>
-                </section>
-                <!-- 2행 내용 -->
-                <section class="contents_wrap">
-                    <div class="contents_container">
-                        <h1>쏘카만의 3P!</h1>
-                        <p>SOCAR PLAN, SOCAR PASSPORT, SOCAR PAIR로 시원한 여름 바캉스 보내세요.</p>
-                        <ul class="contents_li">
-                            <li class="contents_style contents_line">
-                                <h2>SOCAR PLAN</h2>
-                                <p>전국에서 만나는<br>쏘카플랜<br>필요한 만큼, 자유롭게</p>
-                                <p><img src="./image/icon_con1.png" alt=""></p>
-                            </li>
-                            <li class="contents_style contents_line">
-                                <h2>SOCAR PASSPORT</h2>
-                                <p>이동부터 숙박,<br>주차까지 할인받는<br>모빌리티 멤버십</p>
-                                <p><img src="./image/icon_con2.png" alt=""></p>
-                            </li>
-                            <li class="contents_style">
-                                <h2>SOCAR PAIR</h2>
-                                <p>쏘카로 쉽고 편한<br>카셰어링을 저렴하게<br>경험해보세요</p>
-                                <p><img src="./image/icon_con3.png" alt=""></p>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <!-- 3행 퀴즈 -->
-                <section class="quiz_wrap">
-                    <div class="quiz_container">
-                        <h1>당신의 PLAN을 위한 쏘카의 EVENT!</h1>
-                        <p>여름맞이 PASSPORT 3달 무료 이용권 증정 퀴즈</p>
-                        <form action="#" method="get" id="quiz_contents">
-                            <div class="quiz_contents_wrap">
-                                <div class="left_wrap">
-                                    <h2>Q. 다음 중 쏘카의 3P가 아닌 것은?</h2>
-                                    <div class="quiz_choice">
-                                        <label><input type="radio" name="quiz" value="place"><span>SOCAR PLACE</span></label>
-                                        <label><input type="radio" name="quiz" value="plan"><span>SOCAR PLAN</span></label>
-                                        <label><input type="radio" name="quiz" value="passport"><span>SOCAR PASSPORT</span></label>
-                                        <label><input type="radio" name="quiz" value="pair"><span>SOCAR PAIR</span></label>
-                                    </div>
-                                </div>
-                                <dl class="quiz_notice">
-                                    <dt>응모기한</dt>
-                                    <dd>· 2025년 6월 1일 일요일 ~ 2025년 7월 1일 화요일 (30일간) </dd>
-                                    <dt>주의사항</dt>
-                                    <dd>· 정답 확인 후 쏘카 앱에 가입되어 있는 정보를 입력하셔야 쿠폰이 지급됩니다.</dd>
-                                    <dd>· 가입된 정보가 없으신 분은 쿠폰을 지급받으실 수 없습니다.</dd>
-                                    <dd>· 동일한 정보로 2회 이상 입력하셔도 쿠폰은 1장만 지급됩니다.</dd>
-                                </dl>
-                            </div>
-                            <button type="submit" class="quiz_btn btn_style">정답 확인<img src="./image/icon_btn_arrow.png" alt=""></button>
-                        </form>
-                    </div>
-                </section>
-                <!-- 4행 동영상 -->
-                <section class="video_wrap">
-                    <div class="event_line">
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div class="video_contents">
-                        <iframe width="1236" height="695" src="https://www.youtube.com/embed/GEXoHJPkXnM" title="#전국어디서나, 여름여행 쏘카하자" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <a href="https://www.youtube.com/@socar.official" class="youtube_btn btn_style" target="_blank">쏘카 YouTube<img src="./image/icon_btn_arrow.png" alt=""></a>
-                    </div>
-                </section>
-                <!-- 5행 서비스 스크롤 -->
-                <section class="slide_wrap">
-                    <div class="slide_title">
-                        <h1>다채로운 쏘카의<br>서비스를 만나보세요.</h1>
-                        <div class="scrollbar_wrap">
-                            <div class="scrollbar_bg"> <!-- 스크롤 배경은 background로 -->
-                                <span class="scrollbar"><!-- 현재 스크롤 표시 --></span>
-                            </div>
-                            <div class="btn_wrap">
-                                <button type="button" class="slide_btn slide_btn_pre"><img src="./image/icon_pre.png" alt="쏘카 서비스 이전 보기"></button>
-                                <button type="button" class="slide_btn slide_btn_next"><img src="./image/icon_next.png" alt="쏘카 서비스 다음 보기"></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide_li">
-                        <div class="slide_contents"> <!-- position이나 transition으로 겹치기 -->
-                            <a href="#"> <!-- 그냥 a background로 이미지 넣고 before로 그라디언트 -->
-                                <h2>쏘카존</h2>
-                                <p>쏘카 전용 주차장으로 간편한 주차</p>
-                            </a>
-                            <a href="#">
-                                <h2>주차권 할인</h2>
-                                <p>모두의 주차장으로 최대 80%까지 할인</p>
-                            </a>
-                            <a href="#">
-                                <h2>업무·외근</h2>
-                                <p>일하는 사람들의 이동 파트너, 쏘카비지니스</p>
-                            </a>
-                            <a href="#">
-                                <h2>전국 제휴 혜택</h2>
-                                <p>전국의 다양한 제휴처에서 누리는 혜택</p>
-                            </a>
-                            <a href="#">
-                                <h2>운전점수</h2>
-                                <p>안전 운전자들을 위한 혜택</p>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <!-- 6행 월간 -->
-                <section class="month_e_wrap">
-                    <div class="month_e_title">
-                        <h1><em>월간 쏰 특가</em>도<br>놓치지말고 챙겨가세요!</h1>
-                        <div class="month_e_contents">
-                            <div class="month_e">
-                                <h2>6월 <em>1주차</em> 할인 쿠폰</h2>
-                                <h3>확정된 일정이라면?</h3>
-                                <p class="month_e_confirm">60<em>%</em></p>
-                                <h3>변경될 수 있는 일정이라면?</h3>
-                                <p>55<em>%</em></p>
-                            </div>
-                            <div class="month_e">
-                                <h2>6월 <em>2주차</em> 할인 쿠폰</h2>
-                                <h3>확정된 일정이라면?</h3>
-                                <p class="month_e_confirm">65<em>%</em></p>
-                                <h3>변경될 수 있는 일정이라면?</h3>
-                                <p>60<em>%</em></p>
-                            </div>
-                            <div class="month_e">
-                                <h2>6월 <em>3주차</em> 할인 쿠폰</h2>
-                                <h3>확정된 일정이라면?</h3>
-                                <p class="month_e_confirm">70<em>%</em></p>
-                                <h3>변경될 수 있는 일정이라면?</h3>
-                                <p>65<em>%</em></p>
-                            </div>
-                            <div class="month_e">
-                                <h2>6월 <em>4주차</em> 할인 쿠폰</h2>
-                                <h3>확정된 일정이라면?</h3>
-                                <p class="month_e_confirm">75<em>%</em></p>
-                                <h3>변경될 수 있는 일정이라면?</h3>
-                                <p>70<em>%</em></p>
-                            </div>
-                        </div>
-                        <a href="#" class="month_e_btn btn_style">자세히 보기<img src="./image/icon_btn_arrow.png" alt=""></a>
-                    </div>
-                </section>
-                <!-- 7행 숙박 -->
-                <section class="dormitory_wrap">
-                    <div class="dormitory_contents_wrap">
-                        <div class="dormitory_title">
-                            <h1>숙박도</h1>
-                            <h1>쏘카에서</h1>
-                            <h1>쏰!</h1>
-                        </div>
-                        <ul class="dormitory_contents_box">
-                            <li> <!-- span을 inline과 block 바꾸면서 줄바꿈하기 -->
-                                <h2>야구장 직관 가자! <em>숙박 & 차 할인 받고</em> <span>GO!</span></h2>
-                                <p>야구장 근처 숙소 예약하면 차 할인까지</p>
-                                <p class="dormitory_icon"><img src="./image/icon_dormi01.png" alt=""></p>
-                            </li>
-                            <li>
-                                <h2>낭만 가득<em>특별한 숙소</em> <span>글램핑</span></h2>
-                                <p>낭만 가득한 특별한 숙소를 저렴하게</p>
-                                <p class="dormitory_icon"><img src="./image/icon_dormi02.png" alt=""></p>
-                            </li>
-                            <li>
-                                <h2>기간한정 <em>지금 놓치면 끝!</em><span>타임세일 숙소</span></h2>
-                                <p>지금 이 순간, 가장 저렴하게</p>
-                                <p class="dormitory_icon"><img src="./image/icon_dormi03.png" alt=""></p>
-                            </li>
-                            <li>
-                                <h2>주말 여행 <em>지금이 기회!</em><span>금, 토, 일 특가 숙소</span></h2>
-                                <p>소중한 주말을 특별한 여행으로</p>
-                                <p class="dormitory_icon"><img src="./image/icon_dormi04.png" alt=""></p>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <!-- 8행 이미지 -->
-                <section class="car_bg_wrap">
-                    <div class="car_bg"></div>
-                </section>
+      <header>
+        <h1>
+          <a href="#"><img src="./image/Logo.png" alt="쏘카" /></a>
+        </h1>
+      </header>
+      <main>
+        <div id="main_wrap">
+          <!-- 1행 메인 사진 -->
+          <section class="img_wrap">
+            <div class="img_contents">
+              <h1>여름계획!<br />쏘카플랜!</h1>
+              <a href="#" class="app_down"
+                ><img src="./image/socar_app_down.png" alt="" />쏘카 앱
+                다운로드</a
+              >
             </div>
-        </main>
-        <footer>
-            <div id="footer_bg">
-                <div class="footer_wrap">
-                    <div class="sns_icons">
-                        <a href="#"><img src="./image/icon_insta.png" alt="쏘카 인스타그램 바로가기"></a>
-                        <a href="#"><img src="./image/icon_facebook.png" alt="쏘카 페이스북 바로가기"></a>
-                        <a href="#"><img src="./image/icon_youtube.png" alt="쏘카 유튜브 바로가기"></a>
+          </section>
+          <!-- 2행 내용 -->
+          <section class="contents_wrap">
+            <div class="contents_container">
+              <h1>쏘카만의 3P!</h1>
+              <p>
+                SOCAR PLAN, SOCAR PASSPORT, SOCAR PAIR로 시원한 여름 바캉스
+                보내세요.
+              </p>
+              <ul class="contents_li">
+                <li class="contents_style contents_line">
+                  <h2>SOCAR PLAN</h2>
+                  <p>
+                    전국에서 만나는<br />쏘카플랜<br />필요한 만큼, 자유롭게
+                  </p>
+                  <p><img src="./image/icon_con1.png" alt="" /></p>
+                </li>
+                <li class="contents_style contents_line">
+                  <h2>SOCAR PASSPORT</h2>
+                  <p>
+                    이동부터 숙박,<br />주차까지 할인받는<br />모빌리티 멤버십
+                  </p>
+                  <p><img src="./image/icon_con2.png" alt="" /></p>
+                </li>
+                <li class="contents_style">
+                  <h2>SOCAR PAIR</h2>
+                  <p>
+                    쏘카로 쉽고 편한<br />카셰어링을 저렴하게<br />경험해보세요
+                  </p>
+                  <p><img src="./image/icon_con3.png" alt="" /></p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- 3행 퀴즈 -->
+          <section class="quiz_wrap">
+            <div class="quiz_container">
+              <h1>당신의 PLAN을 위한 쏘카의 EVENT!</h1>
+              <p>여름맞이 PASSPORT 3달 무료 이용권 증정 퀴즈</p>
+              <form action="#" method="get" id="quiz_contents">
+                <div class="quiz_contents_wrap">
+                  <div class="left_wrap">
+                    <h2>Q. 다음 중 쏘카의 3P가 아닌 것은?</h2>
+                    <div class="quiz_choice">
+                      <label
+                        ><input type="radio" name="quiz" value="place" /><span
+                          >SOCAR PLACE</span
+                        ></label
+                      >
+                      <label
+                        ><input type="radio" name="quiz" value="plan" /><span
+                          >SOCAR PLAN</span
+                        ></label
+                      >
+                      <label
+                        ><input
+                          type="radio"
+                          name="quiz"
+                          value="passport"
+                        /><span>SOCAR PASSPORT</span></label
+                      >
+                      <label
+                        ><input type="radio" name="quiz" value="pair" /><span
+                          >SOCAR PAIR</span
+                        ></label
+                      >
                     </div>
-                    <ul class="company_contents">
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">인재채용</a></li>
-                        <li><a href="#">이용약관</a></li>
-                        <li><a href="#"><em>개인정보처리방침</em></a></li>
-                        <li><a href="#"><em>위치정보 이용약관</em></a></li>
-                        <li><a href="#"><em>차량손해면책제도</em></a></li>
-                        <li><a href="#">고객센터</a></li>
-                        <li><a href="#">제휴 문의</a></li>
-                    </ul>
-                    <div class="company_info">
-                        <div class="left_info">
-                            <p>주소. 제주특별자치도 제주시 연미길 42 (오라삼동)</p>
-                            <p>전화. 1661-3315</p>
-                            <p>팩스. 02-6969-9333</p>
-                        </div>
-                        <div class="right_info">
-                            <p>(주)쏘카 통신판매업 <a href="#">사업자정보 확인</a></p>
-                            <p>신고: 제 2019-제주오라-3호, 사업자등록번호: 616-81-90529, 대표자: 박재욱</p>
-                            <p>&copy; 2025 SOCAR All rights reserved.</p>
-                        </div>
-                    </div>
+                  </div>
+                  <dl class="quiz_notice">
+                    <dt>응모기한</dt>
+                    <dd>
+                      · 2025년 6월 1일 일요일 ~ 2025년 7월 1일 화요일 (30일간)
+                    </dd>
+                    <dt>주의사항</dt>
+                    <dd>
+                      · 정답 확인 후 쏘카 앱에 가입되어 있는 정보를 입력하셔야
+                      쿠폰이 지급됩니다.
+                    </dd>
+                    <dd>
+                      · 가입된 정보가 없으신 분은 쿠폰을 지급받으실 수 없습니다.
+                    </dd>
+                    <dd>
+                      · 동일한 정보로 2회 이상 입력하셔도 쿠폰은 1장만
+                      지급됩니다.
+                    </dd>
+                  </dl>
                 </div>
+                <button type="submit" class="quiz_btn btn_style">
+                  정답 확인<img src="./image/icon_btn_arrow.png" alt="" />
+                </button>
+              </form>
             </div>
-        </footer>
+          </section>
+          <!-- 4행 동영상 -->
+          <section class="video_wrap">
+            <div class="event_line">
+              <p></p>
+              <p></p>
+            </div>
+            <div class="video_contents">
+              <iframe
+                width="1236"
+                height="695"
+                src="https://www.youtube.com/embed/GEXoHJPkXnM"
+                title="#전국어디서나, 여름여행 쏘카하자"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <a
+                href="https://www.youtube.com/@socar.official"
+                class="youtube_btn btn_style"
+                target="_blank"
+                >쏘카 YouTube<img src="./image/icon_btn_arrow.png" alt=""
+              /></a>
+            </div>
+          </section>
+          <!-- 5행 서비스 스크롤 -->
+          <section class="slide_wrap">
+            <div class="slide_title">
+              <h1>다채로운 쏘카의<br />서비스를 만나보세요.</h1>
+              <div class="scrollbar_wrap">
+                <div class="scrollbar_bg">
+                  <!-- 스크롤 배경은 background로 -->
+                  <span class="scrollbar"><!-- 현재 스크롤 표시 --></span>
+                </div>
+                <div class="btn_wrap">
+                  <button type="button" class="slide_btn slide_btn_pre">
+                    <img
+                      src="./image/icon_pre.png"
+                      alt="쏘카 서비스 이전 보기"
+                    />
+                  </button>
+                  <button type="button" class="slide_btn slide_btn_next">
+                    <img
+                      src="./image/icon_next.png"
+                      alt="쏘카 서비스 다음 보기"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="slide_li">
+              <ul class="slide_contents">
+                <li>
+                  <a href="#">
+                    <h2>쏘카존</h2>
+                    <p>쏘카 전용 주차장으로 간편한 주차</p>
+                    <p><img src="./image/img001.jpg" alt="" /></p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <h2>주차권 할인</h2>
+                    <p>모두의 주차장으로 최대 80%까지 할인</p>
+                    <p><img src="./image/img002.jpg" alt="" /></p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <h2>업무·외근</h2>
+                    <p>일하는 사람들의 이동 파트너, 쏘카비지니스</p>
+                    <p><img src="./image/img003.jpg" alt="" /></p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <h2>전국 제휴 혜택</h2>
+                    <p>전국의 다양한 제휴처에서 누리는 혜택</p>
+                    <p><img src="./image/img004.jpg" alt="" /></p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <h2>운전점수</h2>
+                    <p>안전 운전자들을 위한 혜택</p>
+                    <p><img src="./image/img005.jpg" alt="" /></p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- 6행 월간 -->
+          <section class="month_e_wrap">
+            <div class="month_e_title">
+              <h1><em>월간 쏰 특가</em>도<br />놓치지말고 챙겨가세요!</h1>
+              <div class="month_e_contents">
+                <div class="month_e">
+                  <h2>6월 <em>1주차</em> 할인 쿠폰</h2>
+                  <h3>확정된 일정이라면?</h3>
+                  <p class="month_e_confirm">60<em>%</em></p>
+                  <h3>변경될 수 있는 일정이라면?</h3>
+                  <p>55<em>%</em></p>
+                </div>
+                <div class="month_e">
+                  <h2>6월 <em>2주차</em> 할인 쿠폰</h2>
+                  <h3>확정된 일정이라면?</h3>
+                  <p class="month_e_confirm">65<em>%</em></p>
+                  <h3>변경될 수 있는 일정이라면?</h3>
+                  <p>60<em>%</em></p>
+                </div>
+                <div class="month_e">
+                  <h2>6월 <em>3주차</em> 할인 쿠폰</h2>
+                  <h3>확정된 일정이라면?</h3>
+                  <p class="month_e_confirm">70<em>%</em></p>
+                  <h3>변경될 수 있는 일정이라면?</h3>
+                  <p>65<em>%</em></p>
+                </div>
+                <div class="month_e">
+                  <h2>6월 <em>4주차</em> 할인 쿠폰</h2>
+                  <h3>확정된 일정이라면?</h3>
+                  <p class="month_e_confirm">75<em>%</em></p>
+                  <h3>변경될 수 있는 일정이라면?</h3>
+                  <p>70<em>%</em></p>
+                </div>
+              </div>
+              <a href="#" class="month_e_btn btn_style"
+                >자세히 보기<img src="./image/icon_btn_arrow.png" alt=""
+              /></a>
+            </div>
+          </section>
+          <!-- 7행 숙박 -->
+          <section class="dormitory_wrap">
+            <div class="dormitory_contents_wrap">
+              <div class="dormitory_title">
+                <h1>숙박도</h1>
+                <h1>쏘카에서</h1>
+                <h1>쏰!</h1>
+              </div>
+              <ul class="dormitory_contents_box">
+                <li>
+                  <!-- span을 inline과 block 바꾸면서 줄바꿈하기 -->
+                  <h2>
+                    야구장 직관 가자! <em>숙박 & 차 할인 받고</em>
+                    <span>GO!</span>
+                  </h2>
+                  <p>야구장 근처 숙소 예약하면 차 할인까지</p>
+                  <p class="dormitory_icon">
+                    <img src="./image/icon_dormi01.png" alt="" />
+                  </p>
+                </li>
+                <li>
+                  <h2>낭만 가득<em>특별한 숙소</em> <span>글램핑</span></h2>
+                  <p>낭만 가득한 특별한 숙소를 저렴하게</p>
+                  <p class="dormitory_icon">
+                    <img src="./image/icon_dormi02.png" alt="" />
+                  </p>
+                </li>
+                <li>
+                  <h2>
+                    기간한정 <em>지금 놓치면 끝!</em><span>타임세일 숙소</span>
+                  </h2>
+                  <p>지금 이 순간, 가장 저렴하게</p>
+                  <p class="dormitory_icon">
+                    <img src="./image/icon_dormi03.png" alt="" />
+                  </p>
+                </li>
+                <li>
+                  <h2>
+                    주말 여행 <em>지금이 기회!</em
+                    ><span>금, 토, 일 특가 숙소</span>
+                  </h2>
+                  <p>소중한 주말을 특별한 여행으로</p>
+                  <p class="dormitory_icon">
+                    <img src="./image/icon_dormi04.png" alt="" />
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- 8행 이미지 -->
+          <section class="car_bg_wrap">
+            <div class="car_bg"></div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div id="footer_bg">
+          <div class="footer_wrap">
+            <div class="sns_icons">
+              <a href="#"
+                ><img
+                  src="./image/icon_insta.png"
+                  alt="쏘카 인스타그램 바로가기"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./image/icon_facebook.png"
+                  alt="쏘카 페이스북 바로가기"
+              /></a>
+              <a href="#"
+                ><img src="./image/icon_youtube.png" alt="쏘카 유튜브 바로가기"
+              /></a>
+            </div>
+            <ul class="company_contents">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">인재채용</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li>
+                <a href="#"><em>개인정보처리방침</em></a>
+              </li>
+              <li>
+                <a href="#"><em>위치정보 이용약관</em></a>
+              </li>
+              <li>
+                <a href="#"><em>차량손해면책제도</em></a>
+              </li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">제휴 문의</a></li>
+            </ul>
+            <div class="company_info">
+              <div class="left_info">
+                <p>주소. 제주특별자치도 제주시 연미길 42 (오라삼동)</p>
+                <p>전화. 1661-3315</p>
+                <p>팩스. 02-6969-9333</p>
+              </div>
+              <div class="right_info">
+                <p>(주)쏘카 통신판매업 <a href="#">사업자정보 확인</a></p>
+                <p>
+                  신고: 제 2019-제주오라-3호, 사업자등록번호: 616-81-90529,
+                  대표자: 박재욱
+                </p>
+                <p>&copy; 2025 SOCAR All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
