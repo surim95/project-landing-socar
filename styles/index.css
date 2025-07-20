@@ -259,14 +259,15 @@
   font-size: 1.125rem;
 }
 #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_btn {
+  border: 1px solid #00b8ff;
 }
 #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_btn:hover {
   background-color: #00b8ff;
   color: #fff;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
 }
 #main_wrap .quiz_wrap .quiz_container #quiz_contents .quiz_btn:hover img {
-  filter: ;
+  filter: brightness(0) invert(1);
 }
 .btn_style {
   display: flex;
@@ -315,6 +316,14 @@
 #main_wrap .video_wrap .video_contents .youtube_btn {
   border: 1px solid #00b8ff;
   width: max-content;
+}
+#main_wrap .video_wrap .video_contents .youtube_btn:hover {
+  border: 1px solid #fff;
+  background: #00b8ff;
+  color: #fff;
+}
+#main_wrap .video_wrap .video_contents .youtube_btn:hover img {
+  filter: brightness(0) invert(1);
 }
 /* 4행 애니메이션 */
 @keyframes lineslide {
@@ -537,6 +546,15 @@
   width: max-content;
   background-color: #00b8ff;
   color: #fff;
+  border: 1px solid #fff;
+}
+#main_wrap .month_e_wrap .month_e_title .month_e_btn:hover {
+  background: #fff;
+  color: #00b8ff;
+  border: 1px solid #00b8ff;
+}
+#main_wrap .month_e_wrap .month_e_title .month_e_btn:hover img {
+  filter: invert(0) brightness(1);
 }
 #main_wrap .month_e_wrap .month_e_title .month_e_btn img {
   filter: brightness(0) invert(1); /* 단색 이미지를 필터를 이용해 흰색으로 만드는 방법 */
